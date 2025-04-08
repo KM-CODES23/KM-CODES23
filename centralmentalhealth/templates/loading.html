@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loading...</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <style>
+    /* Base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #BB1B28, #EB757F);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .loader-container {
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+   
+
+    .spinner {
+      margin: 0 auto 25px;
+      width: 70px;
+      height: 70px;
+      border: 8px solid rgba(255, 255, 255, 0.3);
+      border-top: 8px solid #fff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+    }
+
+    /* Animations */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scaleIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+
+      
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="loader-container">
+    <img src="{% static 'img/logo.png' %}" alt="Central Mental Health logo" class="navbar-logo" />
+    <div class="spinner"></div>
+    <h2>Loading Central Mental Health...</h2>
+    
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "{% url 'signin' %}";
+    }, 3000);
+  </script>
+</body>
+</html>

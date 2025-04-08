@@ -1,0 +1,21 @@
+# Python & Django
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+*.log
+
+# Virtual environments
+env/
+ENV/
+venv/
+*.env
+
+# Node
+node_modules/
+package-lock.json
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
