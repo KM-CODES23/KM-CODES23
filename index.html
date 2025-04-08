@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Central Mental Health</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logo"><img src="imgs/logo.png" alt="central mental health logo" class="navbar-logo" loading="lazy"/></div>
+      <nav>
+        <a href="index.html" class="active">🏠</a>
+        <a href="Logger.html">📝</a>
+        <a href="tracker.html">🧘</a>
+        <a>
+          <div class="dropdown">
+            ⚙️
+            <div class="dropdown-content">
+              <a href="#">View Profile</a>
+              <a href="#">Settings</a>
+          </a>
+      </nav>
+    </aside>
+
+    <main class="dashboard">
+      <header>
+        <h1>Welcome, Alex 👋</h1>
+        <p>Your daily wellness assistant</p>
+      </header>
+
+      <section class="cards">
+        <div class="card glass" id="stress-card">
+          <h2>🧠 Stress Level</h2>
+          <input type="range" min="1" max="10" value="5" class="slider" />
+          <p>Current: <span id="stressValue">5</span>/10</p>
+          <a href="Logger.html"><button id="submitBtn">Submit</button></a>
+        </div>
+
+        <div class="card glass">
+          <h2>🧘 Mindfulness</h2>
+          <p>Start your 5-min breathing session to relax and reset.</p>
+          <a href="tracker.html"><button class="btn">Get Started</button></a>
+        </div>
+
+        <div class="card glass">
+          <h2>📋 Daily Check-In</h2>
+          <ul>
+            <li>😴 Sleep</li>
+            <li>🥗 Diet</li>
+            <li>🏃 Exercise</li>
+          </ul>
+          <button class="btn">Check-In</button>
+        </div>
+
+        <div class="card glass">
+          <h2>💡 Recommendations</h2>
+          <p>Take a 15-min walk, eat protein-rich foods, schedule 45-min study blocks.</p>
+          <button class="btn">View Tips</button>
+        </div>
+      </section>
+      <script src="Logger.js"></script>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

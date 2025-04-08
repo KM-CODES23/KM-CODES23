@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Plan Check-In</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logo"><img src="imgs/logo.png" alt="central mental health logo" class="navbar-logo" loading="lazy"/></div>
+      <nav>
+        <a href="index.html" class="active">🏠</a>
+        <a href="Logger.html">📝</a>
+        <a href="tracker.html">🧘</a>
+        <a>
+          <div class="dropdown">
+            ⚙️
+            <div class="dropdown-content">
+              <a href="#">View Profile</a>
+              <a href="#">Settings</a>
+          </a>
+      </nav>
+    </aside>
+    <main class="dashboard">
+      <section class="tracker">
+  <div class="container">
+    <h1>Daily Check-In</h1>
+    <form id="checkinForm">
+      <label for="sleep">How well did you sleep?</label>
+      <select id="sleep" name="sleep">
+        <option value="great">Great</option>
+        <option value="okay">Okay</option>
+        <option value="bad">Didn't Sleep Well</option>
+      </select>
+
+      <label for="mood">How do you feel?</label>
+      <select id="mood" name="mood">
+        <option value="energized">Energized</option>
+        <option value="meh">Meh</option>
+        <option value="tired">Tired</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="recommendation" id="recommendation" style="display: none;">
+      <h2>🧠 Suggested Study Plan</h2>
+      <p>Based on your check-in:</p>
+      <ul id="planDetails">
+        <li>Focus on light study activities only</li>
+        <li>Take a 20-minute walk outside</li>
+        <li>Hydrate and eat a healthy snack</li>
+      </ul>
+
+      <div style="margin-top: 15px; text-align: center;">
+        <button onclick="confirmPlan()">✅ Confirm Plan</button>
+        <button onclick="modifyPlan()">✏️ Modify Plan</button>
+      </div>
+    </div>
+
+    <div class="recommendation" id="confirmationMessage" style="display: none;">
+      <h2>✅ Plan Confirmed!</h2>
+      <p>You're all set for today. Remember to take breaks and care for your well-being 🌿</p>
+    </div>
+
+    <div class="recommendation" id="modifyForm" style="display: none;">
+      <h2>✏️ Customize Your Plan</h2>
+      <form id="customPlanForm">
+        <label for="customStudy">Study Focus:</label>
+        <input type="text" id="customStudy" placeholder="e.g., Review notes for 30 mins" required />
+
+        <label for="customActivity">Activity Suggestion:</label>
+        <input type="text" id="customActivity" placeholder="e.g., Walk around block" required />
+
+        <button type="submit">Save My Plan</button>
+      </form>
+    </div>
+  </div>
+  </section>
+
+  <script>
+    const form = document.getElementById('checkinForm');
+    const recommendation = document.getElementById('recommendation');
+    const confirmationMessage = document.getElementById('confirmationMessage');
+    const modifyForm = document.getElementById('modifyForm');
+    const planDetails = document.getElementById('planDetails');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      recommendation.style.display = 'block';
+      confirmationMessage.style.display = 'none';
+      modifyForm.style.display = 'none';
+    });
+
+    function confirmPlan() {
+      recommendation.style.display = 'none';
+      confirmationMessage.style.display = 'block';
+    }
+
+    function modifyPlan() {
+      recommendation.style.display = 'none';
+      modifyForm.style.display = 'block';
+    }
+
+    document.getElementById('customPlanForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const study = document.getElementById('customStudy').value;
+      const activity = document.getElementById('customActivity').value;
+
+      planDetails.innerHTML = `
+        <li>${study}</li>
+        <li>${activity}</li>
+      `;
+      modifyForm.style.display = 'none';
+      recommendation.style.display = 'block';
+    });
+  </script>
+  </main>
+</body>
+</html>

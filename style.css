@@ -1,0 +1,617 @@
+/* Base styles */
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font and body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header section */
+header {
+  background-color: #BB1B28;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar-logo{
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.navbar-logo:hover{
+  transform: scale(1.1);
+}
+header nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #EB757F;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #EB757F;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #EB757F}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #EB757F;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.hero .btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #BB1B28;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #a41622;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f8f8;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    margin-top: 1rem;
+    background-color: #EB757F;
+  }
+
+  header nav a {
+    display: inline-block;
+    margin: 0.5rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+  /* signup Page/signin */
+  /* Form Section */
+ 
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5);
+  transition: box-shadow 0.3s ease;
+  }
+  .form-section:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 255, 0.5);}
+
+    .form-image-section {
+      flex: 1;
+      min-width: 300px;
+      background-color: #013f4e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .aboutus-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+  .form-container {
+    background-color: white;
+    flex: 1;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .form-container h2, h4 {
+    text-align: center;
+    color: #BB1B28;
+    margin-bottom: 20px;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 15px;
+   
+  }
+  
+  .form-container button {
+    width: 100%;
+    background-color: #BB1B28;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form-container button:hover {
+    background-color: #a71622;
+  }
+  
+  .form-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .form-footer a {
+    color: #EB757F;
+    text-decoration: none;
+  }
+  
+
+  /* Dashboard Page */
+.dashboard {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card {
+  background-color: #fff;
+  border: 2px solid #EB757F;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.profile-card .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile-card h2 {
+  color: #BB1B28;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.dashboard-content {
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.dashboard-content h3 {
+  margin-bottom: 1rem;
+  color: #BB1B28;
+}
+
+.dashboard-content ul {
+  list-style: none;
+  line-height: 1.8;
+}
+
+.dashboard-content ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-content ul li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-card,
+  .dashboard-content {
+    width: 90%;
+  }
+}
+
+/* Wellness Tracker */
+.tracker {
+  padding: 2rem;
+  text-align: center;
+}
+
+.tracker h1 {
+  color: #BB1B28;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #EB757F;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #BB1B28;
+}
+
+.card label {
+  display: block;
+  margin: 1rem 0;
+}
+
+.card select, .card input[type="range"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+#recommendationList {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+#recommendationList li {
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --primary: #BB1B28;
+  --accent: #EB757F;
+  --bg-gradient: linear-gradient(135deg, #fff 0%, #ffe6ea 100%);
+  --text: #333;
+  --glass-bg: rgba(255, 255, 255, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.layout {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 100px;
+  background: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.sidebar .logo {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.sidebar nav a {
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+  transform: scale(1.2);
+}
+
+.dashboard {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+}
+
+.btn {
+  margin-top: 1rem;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #a11720;
+}
+
+.slider {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+
+h1 {
+  
+  margin-bottom: 20px;
+}
+
+input[type="range"] {
+  width: 80%;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #EB757F;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #BB1B28;
+}
+
+.mindfulness {
+  display: none;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #FFEDEF;
+  border-left: 5px solid #EB757F;
+  border-radius: 15px;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+video {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+
+form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 16px;
+  
+}
+
+form select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 10px;
+  border: 1px solid #EB757F;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #BB1B28;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: rgb(242, 75, 75);
+}
+
+/* Recommendation Card */
+.recommendation {
+  margin-top: 30px;
+  background-color: #EB757F;
+  padding: 20px;
+  border-radius: 15px;
+  display: none;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.recommendation h2 {
+  margin-bottom: 10px;
+
+}
+
+.recommendation p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.recommendation ul {
+  list-style-type: "💡 ";
+  margin-left: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

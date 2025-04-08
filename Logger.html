@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Log Your Stress</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+          <div class="logo"><img src="imgs/logo.png" alt="central mental health logo" class="navbar-logo" loading="lazy"/></div>
+          <nav>
+            <a href="index.html" class="active">🏠</a>
+            <a href="Logger.html">📝</a>
+        <a href="tracker.html">🧘</a>
+            <a>
+              <div class="dropdown">
+                ⚙️
+                <div class="dropdown-content">
+                  <a href="#">View Profile</a>
+                  <a href="#">Settings</a>
+              </a>
+          </nav>
+        </aside>
+    
+        <main class="dashboard">
+            <div class="container">
+                <h1>How stressed are you feeling today?</h1>
+            
+                <div class="stress-level">
+                  <input type="range" min="0" max="10" value="5" id="stressRange" />
+                  <p>Stress Level: <span id="stressValue">5</span></p>
+                </div>
+            
+                <button id="submitBtn">Submit</button>
+            
+                <div class="mindfulness" id="mindfulnessCard">
+                  <h2>🧘‍♂️ Let's Take a Breather</h2>
+                  <p>We noticed you're feeling stressed. Try this quick 5-minute mindfulness exercise.</p>
+                  <video src="assets/breathing.mp4" controls autoplay loop></video>
+                </div>
+              </div>
+            
+              <script src="Logger.js"></script>  
+              </main>
+              </div>
+              </body>
+                </html>
