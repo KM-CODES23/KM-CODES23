@@ -2,7 +2,7 @@
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=61DAFB&center=true&vCenter=true&width=650&lines=Hi+there%2C+I+am+Kgothatso;Also+known+as+KM+CODES;ICT+Student+%7C+Aspiring+Full-Stack+Developer;Building+CampusFlow+%40+Sol+Plaatje+University;Co-Founder+%40+KnT.Dev" alt="Typing SVG" />
 <img src="https://komarev.com/ghpvc/?username=KM-CODES23&label=Profile%20Views&color=61DAFB&style=flat" alt="Profile views" />
 </div>
-## 👋 About Me
+  👋 About Me
  
 I'm **Kgothatso Mohanoe**, known online as **KM CODES** — an ICT student and aspiring full-stack developer focused on **web and mobile application development**. I'm completing my final year of ICT application development coursework and preparing for graduate roles in software/tech engineering.
  
@@ -82,11 +82,6 @@ I like turning everyday problems — campus navigation, local food ordering, com
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=KM-CODES23&show_icons=true&theme=tokyonight&hide_border=true" alt="KM-CODES23's GitHub stats" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KM-CODES23&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 </div>
-<div align="center">
-<img src="https://streak-stats.demolab.com?user=KM-CODES23&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</div>
-
-
 <div align="center">
 <img src="https://streak-stats.demolab.com?user=KM-CODES23&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
 </div>
