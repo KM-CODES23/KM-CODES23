@@ -23,7 +23,7 @@ I like turning everyday problems — campus navigation, local food ordering, com
 | **KM CODES** | My personal dev brand & project showcase |
 | **KnT.Dev** | Client solutions, landing pages & web apps — co-founded and built |
  
-> 💡 Tip: turn each project name above into a link once it's live (`[CampusFlow](https://your-link.com)`).
+
  
 ## 🛠️ Tech Stack
  
