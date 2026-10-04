@@ -4,15 +4,15 @@
 </div>
   👋 About Me
  
-I'm **Kgothatso Mohanoe**, known online as **KM CODES** — an ICT student and aspiring full-stack developer focused on **web and mobile application development**. I'm completing my final year of ICT application development coursework and preparing for graduate roles in software/tech engineering.
+I'm **Kgothatso Mohanoe**, known online as **KM CODES** — a final-year ICT student and full-stack developer focused on **web and mobile application development**. 
  
-I like turning everyday problems — campus navigation, local food ordering, community platforms — into apps people actually use.
+I like turning everyday problems into apps people actually use.
  
 - 🎓 Final-year ICT student
 - 💻 Full-stack dev: React, React Native, Django, ASP.NET Core
 - 🚀 Co-founder @ **KnT.Dev** — client solutions, landing pages & web apps
 - 🌍 Based in South Africa
-- 📈 Equally interested in ETFs and TFSAs as I am in APIs and JSX
+- 📈 Currently trying to master Next.js
 ## 🔭 What I'm Building
  
 | Project | Description |
